@@ -22,7 +22,7 @@
     </div>
     <ol>
         <li id="pushFunC" onclick="pushItem('Ujjwal')">push()</li>
-        <li>pop()</li>
+        <li id ="popButton" onclick="popItem()">pop()</li>
         <li>unshift()</li>
         <li>shift()</li>
         <li>splice()</li>
@@ -48,8 +48,13 @@
              console.log(personName);
         }
 
+        function popItem(){
+            personName.pop();
+            console.log(personName);
+        }
 
        
     </script>
+
 </body>
 </html>
