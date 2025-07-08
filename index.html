@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        ul li, ol li{
+            cursor: pointer;
+            color: blue;
+            padding: 5px;
+        }
+        ul li:hover, ol li:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Array functions</h1>
+    <div>Person Name Array:[<span id="arrayContainer"></span>]
+    </div>
+    <ol>
+        <li id="pushFunC" onclick="pushItem('Ujjwal')">push()</li>
+        <li>pop()</li>
+        <li>unshift()</li>
+        <li>shift()</li>
+        <li>splice()</li>
+        <li>slice()</li>
+        <li>find()</li>
+        <li>findIndex()</li>
+        <li>reverse()</li>
+        <li>map()</li>
+        <li>forEach()</li>
+        <li>includes()</li>
+        <li>contains()</li>
+        <li>concat()</li>
+        <li>filter()</li>
+    </ol>
+    <script type="text/javascript">
+        let personName = ['Mohan', 'Shyam', 'Ram', 'Mukesh'];
+
+        let arrayContainer = document.getElementById('arrayContainer');
+        arrayContainer.innerHTML = personName;
+
+        function pushItem(item){
+            personName.push(item);
+             console.log(personName);
+        }
+
+
+       
+    </script>
+</body>
+</html>
